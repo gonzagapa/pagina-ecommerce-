@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/contacto.css">
     <title>Contacto</title>
 </head>
@@ -71,16 +72,17 @@
                 </div>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="info-extra">
                 <legend>Informacion Extra</legend>
-                <div class="campo">
-                    <label for="cliente">Cliente</label>
-                    <input type="radio" name="tipo" id="cliente" value="cliente">
-                </div>
-                <div class="campo">
-                    <label for="proveedor">Proveedor</label>
-                    <input type="radio" name="tipo" id="proveedor" value="proveedor">
-                </div>
+
+                    <div class="campo">
+                        <label for="cliente">Cliente</label>
+                        <input type="radio" name="tipo" id="cliente" value="cliente">
+                    </div>
+                    <div class="campo">
+                        <label for="proveedor">Proveedor</label>
+                        <input type="radio" name="tipo" id="proveedor" value="proveedor">
+                    </div>
                 <div class="campo">
                     <label for="categoria">Categoria de interes</label>
                     <input list="categoria" >
