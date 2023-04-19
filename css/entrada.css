@@ -1,0 +1,110 @@
+/* ESTILOS GENERALES */
+:root{
+    --main-color:#037bc0;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.4rem;
+}
+h3{
+    font-size: 1.9rem;
+}
+img {
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    line-height: 2;
+}
+article{
+    max-width: 600px;
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+}
+
+/* UTILIDADES */
+.text-center{
+    text-align: center;
+}
+.blue-text{
+    color: var(--main-color);
+}
+
+h1{
+    margin-bottom: 1.5em;
+}
+header{
+    margin-bottom: 1.5em;
+}
+.text-blue{
+    color: var(--main-color);
+    margin-left: 10px;
+}
+.navegation{
+    border-top: 1px solid rgb(205, 205, 205);
+    padding-top: 1em;
+}
+.navegation-list{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ENTRADA */
+.wrapper-entrada{
+    display: grid;
+    place-items: center;
+}
+.imagen{
+    margin-bottom: 1rem;
+}
+.article-info{
+    font-weight: 400;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+footer{
+    padding-top: 1.5rem;
+    border-top: 1px solid rgb(205, 205, 205);
+    font-weight: 400;
+}
+.footer-wraper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    justify-items: center;
+}
+.footer-categorias{
+    margin-bottom: 1rem;
+}
+.footer-categorias h2{
+    font-size: 1.7rem ;
+}
+.footer-nav-list li{
+    margin-bottom: 1em;
+}
+.copyright{
+    text-align: center;
+}

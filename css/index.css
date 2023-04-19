@@ -1,0 +1,333 @@
+
+/* ESTILOS GENERALES */
+:root{
+    --main-color:#037bc0;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+}
+h1{
+    font-size: 3rem;
+}
+@media (min-width:768px){
+    h1{
+        font-size: 4rem;
+    }
+}
+h2{
+    font-size: 2.8rem;
+}
+@media (min-width:768px){
+    h2{
+        font-size: 3.2rem
+    }
+};
+h3{
+    font-size: 1.9rem;
+}
+@media (min-width:768px){
+    h3{
+        font-size: 2.5rem; 
+        margin-bottom: 1rem; 
+    }
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    line-height: 2;
+}
+
+
+.btn{
+    background-color: #8cbc00;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    display: block;
+    transition: background-color .3s ease-out;
+}
+.btn:hover{
+    background-color: #769c02;
+}
+.btn:is(:hover, :active){
+    background-color: #769c02;
+}
+
+/* UTILIDADES */
+.text-center{
+    text-align: center;
+}
+
+/* HEADER */
+h1{
+    margin-bottom: 1.5em;
+}
+header{
+    margin-bottom: 1.5em;
+}
+.text-blue{
+    color: var(--main-color);
+    margin-left: 10px;
+}
+.navegation{
+    border-top: 1px solid rgb(205, 205, 205);
+    padding-top: 1em;
+}
+.navegation-list{
+    display: flex;
+    list-style: none;
+    flex-direction: column; 
+    align-items: center; 
+    gap: min(3vw,1.5rem);
+}
+
+@media (min-width:768px){
+    .navegation-list{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+/* HERO */
+.hero{
+    /* background-color: lightcoral; */
+    background-image: url('../assests/images/principal.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 3rem;
+}
+
+/* CATEGORIAS SECTION */
+.categorias-section{
+    margin-bottom:2.5em ;
+    padding: 1rem 0;
+}
+.wrapper-categorias div{
+    margin-bottom: 2rem;
+}
+@media (min-width:768px){
+    .wrapper-categorias{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: max(3vw,2rem);
+    }
+    .wrapper-categorias div{
+        margin-bottom: 0
+    }
+}
+
+.card-categoria{
+    display: flex;
+    flex-flow: column;
+}
+
+.card-categoria img{
+    object-fit: fill;
+    width: 100%;
+}
+
+.categoria-enlace{
+    display: block;
+    font-size: 1.1rem;
+    padding: 1em 0;
+    text-align: center;
+}
+.categoria-enlace:hover{
+    background-color: var(--main-color); 
+    color: #fff;
+    border-bottom-right-radius: 5px;
+}
+
+/* NOSOTROS SECTION */
+.nosotros-section{
+    background-image: linear-gradient( to bottom, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../assests/images/nosotros.jpg);
+    background-size: 80%, 60rem;
+    background-position:center,top left ;
+    color: #fff;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+
+@media (min-width:768px){
+    .nosotros-section{
+        background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../assests/images/nosotros.jpg);
+        background-position: center left;
+        background-size: 100%, 80rem;
+        color: #fff;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: unset;
+    }
+}
+
+.nosotros-descripcion{
+    grid-row: 2/3;
+    font-size: 1.1rem;
+    padding: 2rem;
+}
+
+
+
+@media (min-width:768px){
+    .nosotros-section .nosotros-descripcion{
+        grid-column: 2/3;
+        grid-row: unset;
+    }
+}
+
+.nosotros-descripcion h2{
+    margin-bottom: 1.5rem;
+}
+.nosotros-descripcion p{
+    line-height: 1.3em;
+}
+@media (min-width:1024px){
+    .nosotros-descripcion p{
+        line-height: 1.5em;
+    }
+}
+/* NUESTROS PRODUCTOS */
+
+
+.productos-section{
+    margin-bottom: 2.5rem;
+    /* padding-left: 3rem;
+    padding-right: 3rem; */
+}
+.producto-card{
+    background-color: var(--main-color);
+    color:#fff;
+    margin-bottom: 2rem;
+}
+.producto-card img{
+    max-width: 100%;
+    display: block;
+}
+
+@media (min-width:768px){
+    .wrapper-grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        /* grid-template-rows: repeat(3, minmax(300px,1fr)); */
+        gap: 1rem;
+    }
+    .producto-card:first-child {
+        grid-column: 1/7; 
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    
+    .producto-card:first-child img{
+        object-fit: cover;
+        /* height: 400px; */
+        height: 100%;
+        width: 100%;
+    }
+    .producto-card:nth-child(2) {
+        grid-column: 1/4;
+    }
+    .producto-card:nth-child(3){
+        grid-column: 4/7;
+    }
+    
+    .producto-card:nth-child(2) img, .producto-card:nth-child(3) img{
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+    .producto-card:nth-child(4){
+        grid-column: 1/3;
+        margin-bottom: 0;
+    }
+    .producto-card:nth-child(5){
+        grid-column:3/5;
+        margin-bottom: 0;
+    }
+    .producto-card:nth-child(6){
+        grid-column:5/7 ;
+        margin-bottom: 0;
+    }
+}
+@media (min-width:940px){
+    .producto-card:first-child img{
+        height: 400px;
+    }
+}
+
+
+.producto-desc{
+    text-align: center;
+    padding: 1rem;
+}
+
+.producto-desc p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.precio{
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+
+
+/* FOOTER */
+footer{
+    padding-top: 1.5rem;
+    border-top: 1px solid rgb(205, 205, 205);
+    font-weight: 400;
+}
+@media (min-width:768px){
+    .footer-wraper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        justify-items: center;
+    }
+}
+
+.footer-categorias{
+    margin-bottom: 2rem;
+}
+@media (min-width:768px){
+    .footer-categorias{
+        margin-bottom:0;
+    }
+}
+.footer-categorias h2{
+    font-size: 1.7rem ;
+    text-align:center;
+}
+@media (min-width:768px){
+    .footer-categorias h2{
+        text-align: initial;
+    }
+}
+.footer-nav-list li{
+    text-align: center;
+    margin-bottom: 1em;
+}
+@media (min-width:768px){
+    .footer-nav-list li{
+        text-align: initial;
+    }
+}
+.copyright{
+    text-align: center;
+}
+
+

@@ -1,0 +1,147 @@
+:root{
+    --main-color:#037bc0;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.4rem;
+}
+h3{
+    font-size: 1.9rem;
+}
+img {
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    line-height: 2;
+}
+article{
+    max-width: 600px;
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+}
+
+/* UTILIDADES */
+.text-center{
+    text-align: center;
+}
+.blue-text{
+    color: var(--main-color);
+}
+
+h1{
+    margin-bottom: 1.5em;
+}
+header{
+    margin-bottom: 4rem;
+}
+.text-blue{
+    color: var(--main-color);
+    margin-left: 10px;
+}
+.navegation{
+    border-top: 1px solid rgb(205, 205, 205);
+    padding-top: 1em;
+}
+.navegation-list{
+    display: flex;
+    justify-content: space-around;
+}
+/* MAIN */
+.contenedor-principal{
+    display: grid;
+    place-items: center;
+}
+
+.formulario{
+    width: 40rem;
+}
+
+.formulario fieldset{
+    border: 1px solid #000;
+    margin-bottom: 4rem;
+}
+
+.formulario legend{
+    
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #037bc0;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+.campo{
+    display: flex;
+    margin-bottom: 1.2rem;
+}
+
+.campo label{
+    flex-basis: 6.5rem;
+}
+input:focus, textarea:focus,select:focus{
+    outline: 2px solid black;
+}
+textarea{
+    resize: vertical;
+}
+
+.campo input:not(input[type=radio]),textarea,select{
+    flex: 1;
+    padding: .8rem;
+    border: 1px solid #d5d7d8;
+    background-color: #fff;
+    /* outline: #000; */
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+    padding-top: 1.5rem;
+    border-top: 1px solid rgb(205, 205, 205);
+    font-weight: 400;
+}
+.footer-wraper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    justify-items: center;
+}
+.footer-categorias{
+    margin-bottom: 1rem;
+}
+.footer-categorias h2{
+    font-size: 1.7rem ;
+}
+.footer-nav-list li{
+    margin-bottom: 1em;
+}
+.copyright{
+    text-align: center;
+}

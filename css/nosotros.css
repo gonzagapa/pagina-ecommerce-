@@ -1,0 +1,37 @@
+
+/* MAIN */
+.nosotros-title{
+    margin-top: 5rem;
+}
+
+
+.contenedor-main{
+        width: 95%;
+        margin: 0 auto  5rem auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    }
+
+img{
+    display: block;
+    max-width: 100%;
+}
+@media (min-width:768px){
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.text-main{
+    padding: 0 1rem;
+}
+
+@media (min-width:768px){
+    .text-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
